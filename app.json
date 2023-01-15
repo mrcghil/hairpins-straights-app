@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "straights-hairpins-app",
-    "slug": "straights-hairpins-app",
+    "name": "hairpins-straights-app",
+    "slug": "hairpins-straights-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./src/assets/icon.png",
