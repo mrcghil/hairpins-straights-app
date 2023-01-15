@@ -1,32 +1,37 @@
-import React from 'react';
+import React from "react";
 import {
-  SafeAreaView,
+  // SafeAreaView,
   View,
-  FlatList,
+  Button,
   StyleSheet,
   Text,
-  StatusBar,
-} from 'react-native';
+  // StatusBar,
+} from "react-native";
 
-const EpisodeItem = () => {
-
+const EpisodeItem = (props) => {
+  return (
+    <View style={styles.item}>
+      <Text style={styles.title}>Title</Text>
+      <Button style={styles.button}>Listen</Button>
+    </View>
+  );
 };
 
 const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      marginTop: StatusBar.currentHeight || 0,
-    },
-    item: {
-      backgroundColor: '#f9c2ff',
-      padding: 20,
-      marginVertical: 8,
-      marginHorizontal: 16,
-    },
-    title: {
-      fontSize: 32,
-    },
-  });
+  item: {
+    backgroundColor: "#f9c2ff",
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+  },
+  title: {
+    fontSize: 32,
+  },
+  button: {
+    color: "#000000",
+    backgroundColor: "#ffffff",
+    fontSize: 20,
+  },
+});
 
 export default EpisodeItem;
-
